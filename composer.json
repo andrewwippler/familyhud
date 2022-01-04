@@ -1,0 +1,14 @@
+{
+    "name": "andrewwippler/familyhub",
+    "description": "a simple website to display our family's important events",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Wippler",
+            "email": "Andrew.Wippler@users.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
