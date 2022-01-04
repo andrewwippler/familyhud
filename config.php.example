@@ -1,0 +1,11 @@
+<?php
+$my_timezone="Europe/London";
+
+$all_family = [
+    [
+        'timezone' => 'America/New_York',
+        'name' => 'Family 1',
+        'call_begin' => '08:00:00', // include seconds
+        'call_end' => '21:00:00',
+    ],
+];

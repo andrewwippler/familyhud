@@ -10,5 +10,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "icanboogie/datetime": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"HUD\\": "src/"}
+    }
 }
