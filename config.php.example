@@ -1,6 +1,10 @@
 <?php
 $my_timezone="Europe/London";
 
+// service account of a google API user. Ensure this user has been added as a shared member of the calendar.
+$google_config = json_decode(file_get_contents(__DIR__. '/google.json','r'), true);
+$google_calendar_email = "example@group.calendar.google.com"; // the email address of the calendar goes here.
+
 $all_family = [
     [
         'timezone' => 'America/New_York',

@@ -11,9 +11,19 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "icanboogie/datetime": "dev-master"
+        "icanboogie/datetime": "dev-master",
+        "aliasproject/google-calendar": "dev-master"
     },
     "autoload": {
         "psr-4": {"HUD\\": "src/"}
+    },
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Calendar",
+            "Drive"
+        ]
     }
 }
