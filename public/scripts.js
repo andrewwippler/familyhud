@@ -26,7 +26,7 @@ async function renderCalendar() {
     if (!!calendar) {
         calendar.forEach(item => {
 
-            let htmlSegment = `<div class="calendar"><span class="time">${(!item.end) ? 'All Day' : item.start}</span><span class="item">${item.summary}</span></div>`;
+            let htmlSegment = `<div class="calendar"><span class="item">${item.summary}</span><span class="time">${(!item.end) ? 'All Day' : item.start}</span></div>`;
             html += htmlSegment;
 
         });
