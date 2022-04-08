@@ -12,7 +12,8 @@
     "minimum-stability": "dev",
     "require": {
         "icanboogie/datetime": "dev-master",
-        "aliasproject/google-calendar": "dev-master"
+        "aliasproject/google-calendar": "dev-master",
+        "nette/database": "4.0.x-dev"
     },
     "autoload": {
         "psr-4": {"HUD\\": "src/"}

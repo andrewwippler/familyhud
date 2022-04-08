@@ -13,3 +13,5 @@ $all_family = [
         'call_end' => '21:00:00',
     ],
 ];
+
+$words_to_get = 3;

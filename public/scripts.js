@@ -39,13 +39,26 @@ async function renderCalendar() {
     calContainer.innerHTML = html;
 }
 
+async function renderWords() {
+    let words = await getApi('/api/word.php');
+    let html = '';
+    words.forEach(item => {
+        let htmlSegment = `<div class="words"><span class="item">${item.word}</span><span class="translation">${item.translation}</span></div>`;
+        html += htmlSegment;
+    });
+
+    let wordContainer = document.querySelector('.word-container');
+    wordContainer.innerHTML = html;
+}
+
 // run on page load (once a day)
 renderCalendar();
 renderFamily();
+renderWords();
 
-// const interval = setInterval(function() {
-//     renderFamily();
-// }, 60000); // every minute
+const interval = setInterval(function() {
+    renderFamily();
+}, 60000); // every minute
 
 const reloadPageInterval = setInterval(function() {
     window.location.reload(); 

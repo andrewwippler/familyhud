@@ -55,12 +55,44 @@
             display: block;
             font-size: 18px;
         }
+
+        .words .item {
+            display: block;
+        }
+
+        .word-container {
+            width: 660px;
+            display: inline-block;
+        }
+
+        .words .translation {
+            display: block;
+            font-size: 18px;
+        }
+
+        .flag {
+            font-size: 50px;
+            margin-right: 10px;
+        }
+
+        .bottom-half {
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
         </style>
 </head>
 <body>
     <script src="scripts.js"></script>
+<div class="container">
+    <div class="top-half">
+        <div class="family-container"></div>
+        <div class="calendar-container"></div>
+    </div>
+    <div class="bottom-half">
+        <div class="flag">🇫🇮</div><div class="word-container"></div>
+    </div>
+</div>
 
-    <div class="family-container"></div>
-    <div class="calendar-container"></div>
 </body>
 </html>

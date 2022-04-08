@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS words;
+
+CREATE TABLE words (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  word TEXT NOT NULL,
+  translation TEXT NOT NULL,
+  times_used INTEGER DEFAULT 0
+);
+
+DROP TABLE IF EXISTS iteration;
+
+CREATE TABLE iteration (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  times_used INTEGER NOT NULL
+);
+
+INSERT INTO `iteration` (`times_used`) VALUES (0);
