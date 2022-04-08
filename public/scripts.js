@@ -60,6 +60,10 @@ const interval = setInterval(function() {
     renderFamily();
 }, 60000); // every minute
 
+const quarterInterval = setInterval(function() {
+    renderWords();
+}, 60000*15); // every minute
+
 const reloadPageInterval = setInterval(function() {
     window.location.reload(); 
 }, 86400000); // one day in ms
