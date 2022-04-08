@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Hud</title>
+    <style>
+        body {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .family-container {
+            width: 25%;
+            display: inline-block;
+        }
+        .calendar-container {
+            display: inline-block;
+            width: auto;
+        }
+        .dot {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .family {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+        .green {
+            background-color: #3dff3d;
+        }
+    
+        .red {
+            background-color: #ff3d3d;
+        }
+
+        .calendar {
+            display: block;
+            margin-bottom: 10px;
+            width: auto;
+            overflow: hidden;
+        }
+        .calendar .time {
+            width: 70px;
+            display: inline-block;
+        }
+        </style>
+</head>
+<body>
+    <script src="scripts.js"></script>
+
+    <div class="family-container"></div>
+    <div class="calendar-container"></div>
+</body>
+</html>

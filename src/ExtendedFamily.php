@@ -6,10 +6,11 @@ use ICanBoogie\DateTime;
 class ExtendedFamily
 {
 
-    protected $timezone = '';
-    protected $name = '';
-    protected $call_begin = '';
-    protected $call_end = '';
+    public $timezone = '';
+    public $name = '';
+    public $call_begin = '';
+    public $call_end = '';
+    public $can_call = '';
 
 
     function __construct(array $array)
@@ -18,9 +19,11 @@ class ExtendedFamily
         $this->name = $array['name'];
         $this->call_begin = $array['call_begin'];
         $this->call_end = $array['call_end'];
+        $this->can_call = $this->call_checker();
+
     }
 
-    public function can_call()
+    public function call_checker()
     {
         $current_time = new DateTime('now', $this->timezone);
         $compare_time = $current_time->as_time;
